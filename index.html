@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TutMed</title>
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Fira+Sans:600" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/style.css">
+	<link rel="stylesheet" href="dist/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
+
+	<script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body class="is-boxed has-animations">
+	<!-- Meta Pixel Code -->
+<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '956919261604262');
+	fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=956919261604262&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+	<div class="body-wrap boxed-container">
+		<a href="https://api.whatsapp.com/send?phone=916267764240&text=Interested%21" class="float"
+			target="_blank">
+			<i class="fa fa-whatsapp my-float"></i>
+		</a>
+		<header class="site-header">
+			<div class="header-shape header-shape-1">
+				<svg width="337" height="222" viewBox="0 0 337 222" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient x1="50%" y1="55.434%" x2="50%" y2="0%" id="header-shape-1">
+							<stop stop-color="#E0E1FE" stop-opacity="0" offset="0%" />
+							<stop stop-color="#E0E1FE" offset="100%" />
+						</linearGradient>
+					</defs>
+					<path d="M1103.21 0H1440v400h-400c145.927-118.557 166.997-251.89 63.21-400z"
+						transform="translate(-1103)" fill="url(#header-shape-1)" fill-rule="evenodd" />
+				</svg>
+			</div>
+			<div class="header-shape header-shape-2">
+				<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
+					style="overflow:visible">
+					<defs>
+						<linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%" id="header-shape-2">
+							<stop stop-color="#FF3058" offset="0%" />
+							<stop stop-color="#FF6381" offset="100%" />
+						</linearGradient>
+					</defs>
+					<circle class="anime-element fadeup-animation" cx="64" cy="64" r="64" fill="url(#header-shape-2)"
+						fill-rule="evenodd" />
+				</svg>
+			</div>
+			<div class="container">
+				<div class="site-header-inner">
+					<div class="brand header-brand">
+						<h1 class="m-0">
+							<img src="dist/images/icons8-literature-64.png" width="32" height="32" alt="icon">
+							<!--
+								<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+									<title>April</title>
+									<defs>
+										<linearGradient x1="114.674%" y1="39.507%" x2="-52.998%" y2="39.507%"
+											id="logo-a">
+											<stop stop-color="#8D92FA" offset="0%" />
+											<stop stop-color="#8D92FA" stop-opacity="0" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%" id="logo-b">
+											<stop stop-color="#FF3058" offset="0%" />
+											<stop stop-color="#FF6381" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="32.716%" y1="-20.176%" x2="32.716%" y2="148.747%"
+											id="logo-c">
+											<stop stop-color="#FF97AA" offset="0%" />
+											<stop stop-color="#FF97AA" stop-opacity="0" offset="100%" />
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<path
+											d="M31.12 7.482C28.327 19.146 19.147 28.326 7.483 31.121A12.04 12.04 0 0 1 .88 24.518C3.674 12.854 12.854 3.674 24.518.879a12.04 12.04 0 0 1 6.603 6.603z"
+											fill="#312ECA" />
+										<path
+											d="M28.874 3.922l-24.91 24.99a12.026 12.026 0 0 1-3.085-4.394C3.674 12.854 12.854 3.674 24.518.879a12.025 12.025 0 0 1 4.356 3.043z"
+											fill="url(#logo-a)" />
+										<g opacity=".88">
+											<path
+												d="M31.12 24.518a12.04 12.04 0 0 1-6.602 6.603C12.854 28.326 3.674 19.146.879 7.482A12.04 12.04 0 0 1 7.482.88c11.664 2.795 20.844 11.975 23.639 23.639z"
+												fill="url(#logo-b)" />
+											<path
+												d="M24.518 31.12C12.854 28.327 3.674 19.147.879 7.483A12.015 12.015 0 0 1 3.46 3.57L28.47 28.5a12.016 12.016 0 0 1-3.951 2.62z"
+												fill="url(#logo-c)" />
+										</g>
+									</g>
+								</svg>
+
+							-->
+							
+						</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<div class="hero-inner">
+						<div class="hero-copy">
+							<h1 class="hero-title mt-0">1000+ health workers are TutMed learners
+							</h1>
+							<p class="hero-paragraph">Online course with the flexibility of time</p>
+							<div class="hero-form field field-grouped">
+
+								<form
+									action='https://forms.zohopublic.in/classesadr/form/EMAIL/formperma/dKjlUSp7AYvZgAjbOCuT2Bod1d5UsNDui-GEoGNuUpU/htmlRecords/submit'
+									name='form' class='form1' method='POST' accept-charset='UTF-8'
+									enctype='multipart/form-data'>
+									<div class="control control-expanded">
+										<!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+										<input type="hidden" name="zf_referrer_name" value="">
+										<!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+										<input type="hidden" name="zf_redirect_url" value="">
+										<!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+										<input type="hidden" name="zc_gad" value="">
+										<!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+										<input class="input form11" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11 id="international_PhoneNumber_countrycode" placeholder="Phone" />
+
+
+
+										<button class=" form12 button button-primary " type="submit">Enroll
+											now</button>
+
+
+
+
+									</div>
+
+								</form>
+							</div>
+
+						</div>
+
+						<div class="hero-illustration">
+							<div class="hero-shape hero-shape-1">
+								<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+									<circle class="anime-element fadeup-animation" cx="20" cy="20" r="20" fill="#FFD8CD"
+										fill-rule="evenodd" />
+								</svg>
+							</div>
+							<div class="hero-shape hero-shape-2">
+								<svg width="88" height="88" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+									<circle class="anime-element fadeup-animation" cx="44" cy="44" r="44" fill="#FFD2DA"
+										fill-rule="evenodd" />
+								</svg>
+							</div>
+
+							<div class="hero-main-shape">
+								<!--
+
+
+								<svg width="940" height="647" viewBox="0 0 940 647" xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow:visible">
+
+									<defs>
+										<linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="hero-illustration-a">
+											<stop stop-color="#261FB6" offset="0%" />
+											<stop stop-color="#4950F6" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="89.764%" y1="16.809%" x2="11.987%" y2="82.178%"
+											id="hero-illustration-b">
+											<stop stop-color="#FC8464" offset="0%" />
+											<stop stop-color="#FB5C32" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="100%" y1="23.096%" x2="4.439%" y2="96.586%"
+											id="hero-illustration-c">
+											<stop stop-color="#1ADAB7" offset="0%" />
+											<stop stop-color="#55EBD0" offset="100%" />
+										</linearGradient>
+										<filter x="-13%" y="-150%" width="126.1%" height="400%"
+											filterUnits="objectBoundingBox" id="hero-illustration-d">
+											<feGaussianBlur stdDeviation="32" in="SourceGraphic" />
+										</filter>
+										<linearGradient x1="0%" y1="100%" x2="46.694%" y2="42.915%"
+											id="hero-illustration-f">
+											<stop stop-color="#EEF1FA" offset="0%" />
+											<stop stop-color="#FFF" offset="100%" />
+										</linearGradient>
+										<rect id="hero-illustration-e" width="800" height="450" rx="4" />
+										<linearGradient x1="100%" y1="-12.816%" x2="0%" y2="-12.816%"
+											id="hero-illustration-g">
+											<stop stop-color="#D2DAF0" stop-opacity="0" offset="0%" />
+											<stop stop-color="#D2DAF0" offset="50.045%" />
+											<stop stop-color="#D2DAF0" stop-opacity="0" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="116.514%" y1="-21.201%" x2="0%" y2="100%"
+											id="hero-illustration-h">
+											<stop stop-color="#55EBD0" offset="0%" />
+											<stop stop-color="#4950F6" offset="100%" />
+										</linearGradient>
+										<path id="hero-illustration-j" d="M0 0h308v288H0z" />
+										<filter x="-15.6%" y="-12.5%" width="139%" height="141.7%"
+											filterUnits="objectBoundingBox" id="hero-illustration-i">
+											<feOffset dx="12" dy="24" in="SourceAlpha" result="shadowOffsetOuter1" />
+											<feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1"
+												result="shadowBlurOuter1" />
+											<feColorMatrix
+												values="0 0 0 0 0.0666666667 0 0 0 0 0.062745098 0 0 0 0 0.243137255 0 0 0 0.08 0"
+												in="shadowBlurOuter1" />
+										</filter>
+										<circle id="hero-illustration-k" cx="16" cy="16" r="16" />
+										<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-illustration-m">
+											<stop stop-color="#C6FDF3" offset="0%" />
+											<stop stop-color="#C6FDF3" stop-opacity="0" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="2.875%" y1="89.028%" x2="99.412%" y2="6.885%"
+											id="hero-illustration-n">
+											<stop stop-color="#83F0DD" offset="0%" />
+											<stop stop-color="#1ADAB7" offset="50.924%" />
+											<stop stop-color="#55EBD0" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="50%" y1="1.569%" x2="50%" y2="97.315%"
+											id="hero-illustration-o">
+											<stop stop-color="#FF97AA" offset="0%" />
+											<stop stop-color="#FF6381" offset="100%" />
+										</linearGradient>
+										<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-illustration-p">
+											<stop stop-color="#FCAC96" offset="0%" />
+											<stop stop-color="#FC8464" offset="100%" />
+										</linearGradient>
+										<circle id="hero-illustration-r" cx="28" cy="28" r="28" />
+										<filter x="-85.7%" y="-64.3%" width="314.3%" height="314.3%"
+											filterUnits="objectBoundingBox" id="hero-illustration-q">
+											<feOffset dx="12" dy="24" in="SourceAlpha" result="shadowOffsetOuter1" />
+											<feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1"
+												result="shadowBlurOuter1" />
+											<feColorMatrix
+												values="0 0 0 0 0.0666666667 0 0 0 0 0.062745098 0 0 0 0 0.243137255 0 0 0 0.08 0"
+												in="shadowBlurOuter1" />
+										</filter>
+										<circle id="hero-illustration-t" cx="36" cy="36" r="36" />
+										<filter x="-66.7%" y="-50%" width="266.7%" height="266.7%"
+											filterUnits="objectBoundingBox" id="hero-illustration-s">
+											<feOffset dx="12" dy="24" in="SourceAlpha" result="shadowOffsetOuter1" />
+											<feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1"
+												result="shadowBlurOuter1" />
+											<feColorMatrix
+												values="0 0 0 0 0.0666666667 0 0 0 0 0.062745098 0 0 0 0 0.243137255 0 0 0 0.08 0"
+												in="shadowBlurOuter1" />
+										</filter>
+										<circle id="hero-illustration-v" cx="28" cy="28" r="28" />
+										<filter x="-85.7%" y="-64.3%" width="314.3%" height="314.3%"
+											filterUnits="objectBoundingBox" id="hero-illustration-u">
+											<feOffset dx="12" dy="24" in="SourceAlpha" result="shadowOffsetOuter1" />
+											<feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1"
+												result="shadowBlurOuter1" />
+											<feColorMatrix
+												values="0 0 0 0 0.0666666667 0 0 0 0 0.062745098 0 0 0 0 0.243137255 0 0 0 0.08 0"
+												in="shadowBlurOuter1" />
+										</filter>
+										<circle id="hero-illustration-x" cx="24" cy="24" r="24" />
+										<filter x="-100%" y="-75%" width="350%" height="350%"
+											filterUnits="objectBoundingBox" id="hero-illustration-w">
+											<feOffset dx="12" dy="24" in="SourceAlpha" result="shadowOffsetOuter1" />
+											<feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1"
+												result="shadowBlurOuter1" />
+											<feColorMatrix
+												values="0 0 0 0 0.0666666667 0 0 0 0 0.062745098 0 0 0 0 0.243137255 0 0 0 0.08 0"
+												in="shadowBlurOuter1" />
+										</filter>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<path class="anime-element stroke-animation"
+											d="M600,300 C600,465.685425 465.685425,600 300,600 C134.314575,600 1.3749042e-14,465.685425 3.60373576e-15,300 C-6.54157051e-15,134.314575 134.314575,-1.29473326e-14 300,-2.30926389e-14 C465.685425,-3.32379452e-14 600,134.314575 600,300 Z"
+											fill="url(#hero-illustration-a)" stroke="#4950F6" />
+										<g transform="translate(435 518)">
+											<circle class="anime-element fadeup-animation"
+												fill="url(#hero-illustration-b)" cx="106" cy="32" r="32" />
+											<circle class="anime-element fadeup-animation"
+												fill="url(#hero-illustration-c)" cx="12" cy="117" r="12" />
+										</g>
+
+
+										<!--
+										<g class="anime-element fadeleft-animation">
+											<g transform="translate(103 75)">
+												<path fill-opacity=".24" fill="#11103E"
+													filter="url(#hero-illustration-d)" d="M32 410h736v64H32z" />
+												<use fill="url(#hero-illustration-f)"
+													xlink:href="#hero-illustration-e" />
+											</g>
+											<g transform="translate(123 87)">
+												<circle fill="#D2DAF0" cx="4" cy="4" r="4" />
+												<circle fill="#D2DAF0" cx="20" cy="4" r="4" />
+												<circle fill="#D2DAF0" cx="36" cy="4" r="4" />
+												<path fill-opacity=".56" fill="#FFF" d="M736 2h24v4h-24z" />
+												<path fill="url(#hero-illustration-g)" d="M27 20h706v2H27z" />
+											</g>
+											
+											
+										</g>
+										<g class="anime-element fadeleft-animation">
+											<g transform="translate(56 157)">
+												<use fill="#000" filter="url(#hero-illustration-i)"
+													xlink:href="#hero-illustration-j" />
+												<use fill="#FFF" xlink:href="#hero-illustration-j" />
+												<path fill="#EEF1FA" d="M0 191h308v1H0zM28 44h252v1H28z" />
+												<rect fill="#D2DAF0" x="28" y="20" width="24" height="4" rx="2" />
+												<rect fill="#ABABC9" x="28" y="216" width="64" height="4" rx="2" />
+												<rect fill="#D2DAF0" x="256" y="216" width="24" height="4" rx="2" />
+												<rect fill="#D2DAF0" x="64" y="20" width="24" height="4" rx="2" />
+
+											</g>
+										</g>
+									
+
+								</svg>
+
+							-->
+
+
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="854.55666"
+									height="577.89722" viewBox="0 0 854.55666 577.89722"
+									xmlns:xlink="http://www.w3.org/1999/xlink">
+									<rect x="151.55666" y="268" width="110" height="123" fill="#ccc" />
+									<polygon points="95.557 576 39.557 576 33.557 528 101.557 528 95.557 576"
+										fill="#e6e6e6" />
+									<path
+										d="M380.72875,702.28371,378.839,728.11866a8.22428,8.22428,0,0,0,8.69988,8.80928l13.26993-.80373a4.19488,4.19488,0,0,0,3.8153-5.2044L397.25817,701.457Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<path
+										d="M491.72431,717.56077c15.6176,3.6534,26.77411,8.84633,34.103,15.87434a15.03539,15.03539,0,0,0,9.62359,4.1254c4.59653.24174,8.35492-.27349,11.17944-1.53511h.00045a4.43019,4.43019,0,0,0,2.62469-3.65076,4.50814,4.50814,0,0,0-1.88846-4.16687l-37.03954-26.3546-15.73318,6.294-3.67016,3.67016a3.63415,3.63415,0,0,0,.8002,5.74346Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<path
+										d="M443.66188,295.74594l-105.87329-.98031c.26623-15.42064,3.85407-30.56331,11.69669-44.11378,5.15076-8.89946,5.03948-18.58474,3.7982-26.7444-1.91555-12.592,2.53886-25.47548,12.43708-33.49119a39.916,39.916,0,0,1,26.84266-8.88134l2.0558.08566a40.00777,40.00777,0,0,1,32.87054,19.76983,33.32736,33.32736,0,0,1,3.96134,20.30073c-.67106,6.60129.93466,13.26982,4.6906,20.00186C442.62144,256.47558,444.02465,275.3918,443.66188,295.74594Z"
+										transform="translate(-172.72167 -161.05139)" fill="#2f2e41" />
+									<path
+										d="M514.49653,703.22772l-20.77878,5.42055-101.1836-220.4357,6.324,215.01515H378.07935c-22.2035-101.15879-62.29053-217.90681-44.26782-254.76585l107.50757-6.324Z"
+										transform="translate(-172.72167 -161.05139)" fill="#6c63ff" />
+									<circle cx="218.90906" cy="69.68505" r="28.00618" fill="#ffb9b9" />
+									<path
+										d="M416.0232,282.23167l-46.07467-2.71028c4.51541-10.36377,6.31912-20.34363,4.51712-29.813H408.7958C408.718,256.979,412.33611,269.55581,416.0232,282.23167Z"
+										transform="translate(-172.72167 -161.05139)" fill="#ffb9b9" />
+									<polygon
+										points="272.211 289.217 171.028 296.445 181.417 117.115 199.034 112.146 218.909 116.663 238.784 106.725 251.432 111.243 272.211 289.217"
+										fill="#6c63ff" />
+									<path
+										d="M360.91428,579.45849l-69.112-15.80994c20.5506-68.14818,57.57349-224.05122,45.623-279.61l36.137-16.26165Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<path
+										d="M327.48755,382.51184l-26.19932-16.26165,22.3434-65.4394a30.87113,30.87113,0,0,1,13.49426-16.02839l7.52674-4.35758-4.51713,65.95Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<path
+										d="M505.01057,564.552c-21.81327,12.62013-76.33909,19.65509-100.28018,10.8411-1.76169-61.57277-5.21664-235.739,5.87226-309.42306l39.7507,16.26165-3.6137,48.78495C427.73558,372.74951,482.91928,518.10538,505.01057,564.552Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<polygon
+										points="329.127 213.33 304.734 205.199 272.211 168.158 277.632 121.18 331.837 197.068 329.127 213.33"
+										fill="#e6e6e6" />
+									<path
+										d="M425.40285,409.54533a6.78537,6.78537,0,0,0,8.10524,5.11221l20.706-4.68917-2.99259-13.21656-20.70643,4.68828a6.77693,6.77693,0,0,0-5.11221,8.10524Z"
+										transform="translate(-172.72167 -161.05139)" fill="#ffb9b9" />
+									<path
+										d="M416.0232,223.509c-15.55574-6.3965-30.9192-6.85936-46.07467-.90342l-6.324-22.58563h57.8192Z"
+										transform="translate(-172.72167 -161.05139)" fill="#2f2e41" />
+									<path
+										d="M444.02938,394.25637l11.74452,21.6822c19.7541-5.50955,36.87412-22.87878,53.30208-43.3644l-4.51713-14.4548-28.00617,7.2274Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<path
+										d="M435.44684,349.53683h-3.6137c0-51.11057-10.52349-86.7288-20.77877-86.7288l-.90343-3.6137c9.197,0,15.06047,14.824,18.35964,27.26023C432.9836,303.31394,435.44684,325.71693,435.44684,349.53683Z"
+										transform="translate(-172.72167 -161.05139)" fill="#3f3d56" />
+									<path
+										d="M352.33174,336.88888H348.718c0-46.80915,10.59628-75.8877,26.19933-75.8877l-.90343,3.6137C363.22136,264.61488,352.33174,286.96274,352.33174,336.88888Z"
+										transform="translate(-172.72167 -161.05139)" fill="#3f3d56" />
+									<circle cx="260.91832" cy="189.38886" r="9.03425" fill="#3f3d56" />
+									<path
+										d="M337.87694,358.57108h-3.6137c0-12.95189,7.29489-23.48905,16.26165-23.48905v3.6137C343.5507,338.69573,337.87694,347.61176,337.87694,358.57108Z"
+										transform="translate(-172.72167 -161.05139)" fill="#3f3d56" />
+									<path
+										d="M366.78654,358.57108h-3.6137c0-10.95932-5.67376-19.87535-12.64795-19.87535V335.082C359.49165,335.082,366.78654,345.61919,366.78654,358.57108Z"
+										transform="translate(-172.72167 -161.05139)" fill="#3f3d56" />
+									<circle cx="192.25802" cy="198.42311" r="3.6137" fill="#3f3d56" />
+									<circle cx="163.34842" cy="198.42311" r="3.6137" fill="#3f3d56" />
+									<polygon
+										points="118.177 165.193 140.724 169.219 192.258 242.495 164.88 236.053 118.177 165.193"
+										fill="#6c63ff" />
+									<path
+										d="M286.8996,325.34727a1.91768,1.91768,0,0,0-1.5735,2.971l48.17135,73.08788a1.91143,1.91143,0,0,0,1.16016.81035l22.4127,5.27321a1.91439,1.91439,0,0,0,2.00447-2.9648L306.1856,329.32314a1.90335,1.90335,0,0,0-1.22941-.783l-17.69531-3.16023A2.07607,2.07607,0,0,0,286.8996,325.34727Z"
+										transform="translate(-172.72167 -161.05139)" fill="#3f3d56" />
+									<path
+										d="M316.94907,377.60432l1.33881,13.48521,21.12638-2.09711a6.77573,6.77573,0,0,0-1.33837-13.48521Z"
+										transform="translate(-172.72167 -161.05139)" fill="#ffb9b9" />
+									<path
+										d="M298.57839,376.04229a17.42694,17.42694,0,0,0,17.40637,17.31065h3.47387l2.529-21.07565-20.93979-7.53839Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<rect x="442.55666" width="412" height="217" fill="#e6e6e6" />
+									<path d="M627.27833,366.05139h388v-193h-388Z"
+										transform="translate(-172.72167 -161.05139)" fill="#fff" />
+									<rect x="484.55666" y="40" width="138" height="138" fill="#3f3d56" />
+									<circle cx="589.55666" cy="99" r="4" fill="#6c63ff" />
+									<circle cx="574.55666" cy="85" r="4" fill="#6c63ff" />
+									<path
+										d="M745.27833,260.05139a7.95011,7.95011,0,0,0-4.16785,1.181,25.12434,25.12434,0,0,0-3.86474-4.53583c.01708-.21344.03259-.42731.03259-.64514a7.99417,7.99417,0,0,0-13.54682-5.7569,24.50673,24.50673,0,0,0-6.46264-.05639c.00146-.06269.00946-.12366.00946-.18671a8,8,0,1,0-13.2594,6.01813,25.14047,25.14047,0,0,0-3.62439,3.83362,7.99939,7.99939,0,1,0-5.11621,14.14825l.02533-.00128c-.01313.33258-.02533.66546-.02533,1.00128a25.045,25.045,0,0,0,.72363,5.973,14.99382,14.99382,0,1,0,19.56885,18.57819,24.97131,24.97131,0,0,0,16.34241-2.42426,8.00091,8.00091,0,1,0,10.492-10.492,24.85715,24.85715,0,0,0,2.84784-10.63617l.02527.00128a8,8,0,0,0,0-16Z"
+										transform="translate(-172.72167 -161.05139)" fill="#6c63ff" />
+									<rect x="530.55666" y="37" width="40" height="6" fill="#e6e6e6" />
+									<rect x="660.55666" y="40" width="138" height="138" fill="#3f3d56" />
+									<circle cx="755.75666" cy="131.8" r="1.8" fill="#6c63ff" />
+									<circle cx="749.00666" cy="125.5" r="1.8" fill="#6c63ff" />
+									<path
+										d="M920.82833,292.85139a3.57749,3.57749,0,0,0-1.87553.53144,11.30621,11.30621,0,0,0-1.73914-2.04113c.00769-.096.01467-.19228.01467-.29031a3.59737,3.59737,0,0,0-6.09607-2.5906,11.02775,11.02775,0,0,0-2.90819-.02538c.00066-.02821.00426-.05565.00426-.084a3.6,3.6,0,1,0-5.96673,2.70816,11.31327,11.31327,0,0,0-1.631,1.72513,3.59972,3.59972,0,1,0-2.30229,6.36671l.0114-.00058c-.00591.14966-.0114.29946-.0114.45058a11.27051,11.27051,0,0,0,.32563,2.68783,6.74722,6.74722,0,1,0,8.806,8.36019,11.23714,11.23714,0,0,0,7.35409-1.09092,3.60041,3.60041,0,1,0,4.7214-4.7214,11.18577,11.18577,0,0,0,1.28153-4.78628l.01137.00058a3.6,3.6,0,0,0,0-7.2Z"
+										transform="translate(-172.72167 -161.05139)" fill="#6c63ff" />
+									<circle cx="769.87848" cy="97.64171" r="1.8" fill="#6c63ff" />
+									<circle cx="774.11285" cy="89.43667" r="1.8" fill="#6c63ff" />
+									<path
+										d="M940.52643,251.32953a3.57751,3.57751,0,0,0-1.01994-1.66125,11.3064,11.3064,0,0,0,1.49326-2.22732c.09454-.01863.18907-.038.28342-.06458a3.59737,3.59737,0,0,0,.84112-6.57006,11.02787,11.02787,0,0,0-.76391-2.80619c.02733-.007.05472-.011.082-.01867a3.6,3.6,0,1,0-4.22419-5.00922,11.3133,11.3133,0,0,0-2.10265-1.10227,3.59973,3.59973,0,1,0-6.75243-.49024l.00365.01082c-.14566.03488-.29134.0702-.4368.11117a11.27,11.27,0,0,0-2.49892,1.042,6.74722,6.74722,0,1,0-5.66009,10.74251,11.2371,11.2371,0,0,0,3.04357,6.783,3.60041,3.60041,0,1,0,5.82448,3.26477,11.1857,11.1857,0,0,0,4.95446-.06389l.00252.0111a3.6,3.6,0,1,0,6.93042-1.95173Z"
+										transform="translate(-172.72167 -161.05139)" fill="#6c63ff" />
+									<circle cx="700.16182" cy="73.18149" r="1.8" fill="#6c63ff" />
+									<circle cx="690.95808" cy="73.91887" r="1.8" fill="#6c63ff" />
+									<path
+										d="M867.72564,239.88258a3.57754,3.57754,0,0,0-.87207,1.74343,11.306,11.306,0,0,0-2.68-.0918c-.06574-.07044-.13212-.14048-.20451-.20657a3.59737,3.59737,0,0,0-6.02337,2.75542,11.02762,11.02762,0,0,0-1.97953,2.13065c-.02039-.01951-.03822-.04067-.05918-.05979a3.6,3.6,0,1,0-2.02291,6.23247,11.31355,11.31355,0,0,0,.17439,2.36765,3.59972,3.59972,0,1,0,3.14968,5.99292l.00726-.00881c.10655.10527.21348.21033.32508.31221a11.26967,11.26967,0,0,0,2.20457,1.57173,6.74722,6.74722,0,1,0,12.11144-.86672,11.23714,11.23714,0,0,0,4.15267-6.16668,3.60041,3.60041,0,1,0-.30355-6.67017,11.18565,11.18565,0,0,0-2.67072-4.17348l.00809-.008a3.6,3.6,0,1,0-5.31735-4.85445Z"
+										transform="translate(-172.72167 -161.05139)" fill="#6c63ff" />
+									<rect x="706.55666" y="37" width="40" height="6" fill="#e6e6e6" />
+									<path
+										d="M197.89809,671.2944c14.41965,19.311,44.352,21.34353,44.352,21.34353s6.55352-29.27679-7.86613-48.5878-44.352-21.34353-44.352-21.34353S183.47844,651.98339,197.89809,671.2944Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<path
+										d="M271.35481,678.554c-9.51509,12.74275-29.26658,14.08395-29.26658,14.08395s-4.32447-19.31887,5.19063-32.06162,29.26658-14.084,29.26658-14.084S280.86991,665.81122,271.35481,678.554Z"
+										transform="translate(-172.72167 -161.05139)" fill="#e6e6e6" />
+									<rect y="575.6565" width="519.55666" height="2.24072" fill="#3f3d56" />
+								</svg>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features section">
+				<div class="container">
+					<div class="features-inner section-inner">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">What do we offer?</h2>
+							</div>
+						</div>
+						<div class="features-wrap">
+							<div class="feature  is-revealing">
+								<div class="feature-inner">
+									<div class="feature-icon text-center" style="background:#FFD2DA;">
+										<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88"
+											viewBox="0 0 32 32">
+											<defs>
+												<style>
+													.cls-1 {
+														fill: #30acc2
+													}
+
+													.cls-2 {
+														fill: #68c7d3
+													}
+
+													.cls-3 {
+														fill: #d1e6e9
+													}
+
+													.cls-4 {
+														fill: #a1d8df
+													}
+												</style>
+											</defs>
+											<g id="Physiotherapy">
+												<path class="cls-1" d="M2 24h2v5H2z" />
+												<path class="cls-2" d="M1 21h30v3H1z" />
+												<path class="cls-1" d="M28 24h2v5h-2z" />
+												<path class="cls-3" d="M29.5 21H18v-3h11.5a1.5 1.5 0 0 1 0 3z" />
+												<circle class="cls-3" cx="4" cy="17" r="2" />
+												<path class="cls-4"
+													d="M19 28v-4h2v4a1 1 0 0 1-2 0zM15 28v-4h2v4a1 1 0 0 1-2 0z" />
+												<path class="cls-1" d="M3 19h2a1 1 0 0 1 1 1v1H2v-1a1 1 0 0 1 1-1z" />
+												<path class="cls-3" d="M18 21H8a2 2 0 0 1 0-4h10z" />
+												<path class="cls-4"
+													d="M16 21c-7.49 0-5.65.3-8.45-1.11a1 1 0 0 1 .9-1.78l1.79.89H16a1 1 0 0 1 0 2zM27 18c-1.64 1.32-2.85 2.28-3.76 3H18v-3z" />
+												<circle class="cls-4" cx="18" cy="5" r="2" />
+												<path class="cls-4" d="M17 8h2a2 2 0 0 1 2 2v7h-6v-7a2 2 0 0 1 2-2z" />
+												<path class="cls-3"
+													d="m18 17 9-5.4a1.49 1.49 0 0 1 1.7 2.4C26 16.2 20 21 20 21h-2z" />
+												<path class="cls-2"
+													d="M21 17c-.27 0 .09.11-5.37-2.07-.84-.34-.63-.84-.63-4.93a1 1 0 0 1 2 0v3.32l4.37 1.75A1 1 0 0 1 21 17zM26 14c-4 0-3 .38-5-1.58a13.82 13.82 0 0 0-.06-2.9L23.41 12H26a1 1 0 0 1 0 2z" />
+											</g>
+										</svg>
+									</div>
+
+									<h4 class="feature-title h3-mobile text-center mb-8">Anatomy and Physiology</h4>
+
+									<ul class="text-sm">
+										<li>Obtain knowledge, clinical skills, and the ability to recognize the body
+											skeleton.</li>
+										<li>Apply the principles of fundamentals to get a good hold of a subject.</li>
+										<li>Get exposure to practical learning.</li>
+									</ul>
+
+
+								</div>
+							</div>
+							<div class="feature  is-revealing">
+								<div class="feature-inner">
+									<div class="feature-icon text-center" style="background:#FFD8CD;">
+										<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88"
+											viewBox="0 0 64 64">
+											<defs>
+												<style>
+													.cls-1 {
+														fill: #999
+													}
+
+													.cls-8 {
+														fill: #159b5b
+													}
+
+													.cls-9 {
+														fill: #22b573
+													}
+												</style>
+											</defs>
+											<g id="_11.Researching" data-name="11.Researching">
+												<circle class="cls-1" cx="39.5" cy="35.5" r="20.5" />
+												<circle cx="39.5" cy="35.5" r="17.6" style="fill:#8ffffc" />
+												<path
+													d="M10.7 8a4.6 4.6 0 0 0-4.6 4.6v9.2h9.2v-9.3A4.6 4.6 0 0 0 10.7 8z"
+													style="fill:#213949" />
+												<path
+													d="M12.3 8.2a4.5 4.5 0 0 0-3 4.3v9.2H6.2v-9.2A4.6 4.6 0 0 1 10.7 8a4.2 4.2 0 0 1 1.6.2z"
+													style="fill:#172933" />
+												<path
+													d="M13.8 24.7V49a1.8 1.8 0 0 0-1.7 1.8v3.8a1.3 1.3 0 0 1-2.3 1 1.3 1.3 0 0 1-.4-1v-3.8A1.8 1.8 0 0 0 7.6 49V24.7z"
+													style="fill:#f2f2f2" />
+												<path
+													d="M9.8 24.7v30.9a1.3 1.3 0 0 1-.4-1v-3.8A1.8 1.8 0 0 0 7.6 49V24.7z"
+													style="fill:#ddd" />
+												<rect class="cls-1" x="4" y="21.7" width="13.4" height="3.02" rx="1.5"
+													ry="1.5" />
+												<path d="M9.5 24.7h-4a1.5 1.5 0 1 1 0-3h4a1.5 1.5 0 1 0 0 3z"
+													style="fill:#878787" />
+												<path class="cls-8"
+													d="M32.8 31.3a1 1 0 0 1-1-1v-3a1 1 0 1 1 2 0v3a1 1 0 0 1-1 1z" />
+												<path class="cls-8"
+													d="m34.6 31.9-.5-.2a1 1 0 0 1-.3-1.4l1.5-2.2a1 1 0 1 1 1.7 1.1l-1.5 2.2a1 1 0 0 1-.9.5z" />
+												<path class="cls-8"
+													d="M35.9 33.4a1 1 0 0 1-.3-2l2.8-.9a1 1 0 0 1 .6 1.9l-2.8.9zM38.7 36h-.2l-2.7-.6a1 1 0 0 1 .5-1.9l2.7.6a1 1 0 0 1-.2 2zM37.8 38.8h-.5L34.5 37a1 1 0 0 1 1-1.7l2.8 1.7a1 1 0 0 1-.5 1.9zM36 41.9a1 1 0 0 1-.8-.4l-1.6-2a1 1 0 1 1 1.6-1.3l1.6 2a1 1 0 0 1-.1 1.4z" />
+												<path class="cls-8"
+													d="M32.8 43a1 1 0 0 1-1-1v-2.2a1 1 0 1 1 2 0V42a1 1 0 0 1-1 1z" />
+												<path class="cls-8"
+													d="M29.5 41.6a1 1 0 0 1-.7-1.7l1.7-1.7a1 1 0 1 1 1.4 1.4l-1.7 1.7a1 1 0 0 1-.7.3z" />
+												<path class="cls-8"
+													d="M27.9 39.6a1 1 0 0 1-.5-1.9l3-1.7a1 1 0 0 1 1 1.8l-3 1.7zM26.6 36.5a1 1 0 0 1-.3-2l3-.8a1 1 0 1 1 .5 1.9l-3 .8zM29.7 33.4h-3.6a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.6a1 1 0 0 1 0 2z" />
+												<path class="cls-8"
+													d="m30.7 32.1-.7-.2-2.5-2.2a1 1 0 0 1 1.3-1.5l2.5 2.2a1 1 0 0 1-.7 1.8zM46.8 37.3a1 1 0 0 1-1-1v-2.1a1 1 0 0 1 2 0v2.1a1 1 0 0 1-1 1zM48.7 38.1a1 1 0 0 1-.7-1.7l1.5-1.5a1 1 0 0 1 1.4 1.4l-1.5 1.5a1 1 0 0 1-.7.3z" />
+												<path class="cls-8"
+													d="M51.5 39.9h-2.1a1 1 0 0 1 0-2h2.1a1 1 0 0 1 0 2zM50.1 43.2a1 1 0 0 1-.7-.3L48 41.5a1 1 0 0 1 1.4-1.4l1.5 1.5a1 1 0 0 1-.7 1.7zM46.8 44.6a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2.1a1 1 0 0 1-1 .9z" />
+												<path class="cls-8"
+													d="M43.5 43.2a1 1 0 0 1-.7-1.7l1.5-1.5a1 1 0 0 1 1.4 1.4l-1.5 1.5a1 1 0 0 1-.7.3z" />
+												<path class="cls-8"
+													d="M44.2 39.9h-2.1a1 1 0 0 1 0-2h2.1a1 1 0 0 1 0 2z" />
+												<path class="cls-8"
+													d="M44.9 38.1a1 1 0 0 1-.7-.3l-1.5-1.5a1 1 0 0 1 1.4-1.4l1.5 1.5a1 1 0 0 1-.7 1.7zM45.4 26.8a1 1 0 0 1-1-1v-1.4a1 1 0 1 1 2 0v1.4a1 1 0 0 1-1 1z" />
+												<path class="cls-8"
+													d="M46.7 27.3a1 1 0 0 1-.7-1.7l1-1a1 1 0 0 1 1.4 1.4l-1 1a1 1 0 0 1-.7.3z" />
+												<path class="cls-8"
+													d="M48.7 28.6h-1.5a1 1 0 0 1 0-2h1.4a1 1 0 0 1 0 2z" />
+												<path class="cls-8"
+													d="M47.5 31a.9.9 0 0 1-.7-.3l-1-1a.9.9 0 1 1 1.3-1.3l1 1a.9.9 0 0 1-.7 1.6z" />
+												<path class="cls-8"
+													d="M45.3 31.9a.9.9 0 0 1-.9-.9v-1.4a.9.9 0 1 1 1.9 0V31a.9.9 0 0 1-1 .9z" />
+												<path class="cls-8"
+													d="M43.1 31a1 1 0 0 1-.7-1.7l1-1a1 1 0 1 1 1.4 1.4l-1 1a1 1 0 0 1-.7.3z" />
+												<path class="cls-8"
+													d="M43.6 28.6h-1.5a1 1 0 0 1 0-2h1.4a1 1 0 0 1 0 2z" />
+												<path class="cls-8"
+													d="M44.1 27.3a1 1 0 0 1-.7-.3l-1-1a1 1 0 1 1 1.4-1.4l1 1a1 1 0 0 1-.7 1.7z" />
+												<circle class="cls-9" cx="45.4" cy="27.6" r="1.8" />
+												<path class="cls-9"
+													d="M34.4 36.6a2 2 0 1 1-3.2 0 3.3 3.3 0 1 1 3.2 0z" />
+												<circle class="cls-9" cx="46.8" cy="38.9" r="2.6" />
+											</g>
+										</svg>
+									</div>
+									<h4 class="feature-title h3-mobile text-center mb-8">Biochemistry</h4>
+									<ul class="text-sm">
+										<li>Although chemistry is considered to be complex, we will make it easy. </li>
+										<li>Learn the Kreb cycle in a few minutes.</li>
+										<li>Get a good grasp on making different reactions. </li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="feature is-revealing">
+								<div class="feature-inner">
+									<div class="feature-icon text-center" style="background:#C6FDF3;">
+										<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="88" height="88"
+											xml:space="preserve">
+											<path fill="#7986CB"
+												d="M60 29.999v7.24l11.381 11.378a6.63 6.63 0 0 1 1.953 4.715V83.33H26.668V53.332c0-1.777.691-3.455 1.953-4.714L40 37.239v-7.24h-6.666v4.479l-9.428 9.426A13.3 13.3 0 0 0 20 53.332V83.33a6.663 6.663 0 0 0 6.668 6.666L73.334 90A6.67 6.67 0 0 0 80 83.332v-30c0-3.682-1.494-7.015-3.906-9.428l-9.426-9.428v-4.478H60z" />
+											<path fill="#F44336"
+												d="M63.334 56.664h-10v-9.999h-6.666v9.999h-10v6.668h10v9.998h6.666v-9.998h10zM63.334 10H36.668c-5.521 0-10 4.479-10 10v9.999h46.666V20c0-5.521-4.48-10-10-10zm3.334 13.334H33.334V20a3.34 3.34 0 0 1 3.334-3.334h26.666A3.336 3.336 0 0 1 66.668 20v3.334z" />
+										</svg>
+									</div>
+									<h4 class="feature-title h3-mobile text-center mb-8">Medicine </h4>
+									<ul class="text-sm">
+										<li>Comprehensive coverage of all standard medical and surgical topics.</li>
+										<li>Systematic coverage of the soft skills such as consulting, counseling and
+											record-keeping.</li>
+										<li>Demonstrated clinical practice outcomes.
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="feature  is-revealing">
+								<div class="feature-inner">
+									<div class="feature-icon text-center" style="background:#E0E1FE;">
+										<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="88" height="88"
+											xml:space="preserve">
+											<path fill="#00BFA5"
+												d="M16.666 10v46.667c0 9.96 6.049 18.98 15.815 25.511C37.465 85.501 43.407 88.171 50 90c6.588-1.829 12.531-4.499 17.52-7.822 9.768-6.528 15.814-15.551 15.814-25.511V10H16.666zm60.001 46.667c0 7.333-4.563 14.428-12.853 19.973-3.998 2.66-8.638 4.815-13.814 6.415-5.177-1.597-9.815-3.755-13.819-6.423C27.898 71.095 23.334 64 23.334 56.667v-40h53.333v40z" />
+											<path fill="#F44336"
+												d="M68.333 34.126c0-7.891-4.876-10.793-9.167-10.793-4.289 0-5.465 1.631-9.166 1.631s-4.876-1.631-9.166-1.631c-4.291 0-9.167 2.903-9.167 10.793 0 7.891 3.533 12.699 3.533 12.699S34.638 61.203 36.798 70h6.535c0-10 4.851-15 6.667-15s6.666 5 6.666 15H63.2c2.161-8.797 1.602-23.174 1.602-23.174s3.531-4.808 3.531-12.7zm-8.964 8.839-1.247 1.818.021 2.3c.049 1.288.084 3.446.045 5.99-2.394-3.031-5.336-4.74-8.188-4.74s-5.794 1.706-8.188 4.735c-.037-2.541-.002-4.698.047-5.983l.091-2.328-1.38-1.877c-.031-.052-2.237-3.336-2.237-8.753C38.333 30 40.15 30 40.834 30c1.195 0 1.814.195 2.938.55 1.442.457 3.416 1.082 6.23 1.082 2.813 0 4.784-.625 6.227-1.082 1.127-.354 1.744-.55 2.939-.55.684 0 2.5 0 2.5 4.126-.002 5.417-2.208 8.701-2.299 8.839z" />
+										</svg>
+									</div>
+									<h4 class="feature-title h3-mobile text-center mb-8">Dentistry</h4>
+									<ul class="text-sm">
+										<li>Comprehensive coverage of all topics like endodontics, periodontitis,
+											peritonitis, etc. </li>
+										<li>Case studies allow a clinical perspective on the theory.</li>
+										<li>Learn to write research papers, literature reviews, and case studies.
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials section">
+
+				<div class="testimonials-shape testimonials-shape-2">
+					<svg width="125" height="107" viewBox="0 0 125 107" xmlns="http://www.w3.org/2000/svg">
+						<g fill="none" fill-rule="evenodd">
+							<circle fill="#C6FDF3" cx="48" cy="59" r="48" />
+							<path
+								d="M58.536 39.713c0-6.884 1.72-14.007 5.163-21.368 3.443-7.36 8.167-13.458 14.173-18.292l11.645 7.91c-3.589 4.98-6.262 10.016-8.02 15.106S78.86 33.598 78.86 39.384v13.623H58.536V39.713z"
+								fill="#55EBD0" />
+							<path
+								d="M93.252 39.713c0-6.884 1.722-14.007 5.164-21.368 3.442-7.36 8.166-13.458 14.172-18.292l11.646 7.91c-3.589 4.98-6.262 10.016-8.02 15.106s-2.637 10.529-2.637 16.315v13.623H93.252V39.713z"
+								fill="#1ADAB7" />
+						</g>
+					</svg>
+				</div>
+				<div class="testimonials-shape testimonials-shape-3">
+					<svg width="48" height="48" viewBox="0 0 48 48" mlns="http://www.w3.org/2000/svg">
+						<defs>
+							<linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%"
+								id="testimonials-shape-3">
+								<stop stop-color="#FF3058" offset="0%" />
+								<stop stop-color="#FF6381" offset="100%" />
+							</linearGradient>
+						</defs>
+						<circle cx="24" cy="434" r="24" transform="translate(0 -410)" fill="url(#testimonials-shape-3)"
+							fill-rule="evenodd" />
+					</svg>
+				</div>
+				<div class="container">
+					<div class="testimonials-inner section-inner">
+						<h2 class="section-title mt-0 text-center">Testimonials</h2>
+						<div class="testimonials-wrap">
+							<div class="testimonial text-xs is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<iframe width="340" height="315"
+												src="https://www.youtube.com/embed/RlIPbQ2MvTU"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-link">
+											<a>Jai</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-xs is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+
+										<div class="testimonial-body">
+											<iframe width="340" height="315"
+												src="https://www.youtube.com/embed/hQiKmrfAHyg"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-link">
+											<a>Sammy</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="newsletter section text-light">
+				<div class="container">
+					<div class="row justify-content-center">
+
+						<div class="container-sm col-sm-5">
+							<div class="newsletter-inner section-inner">
+
+								<div class="text-center"><img src="dist/images/IMG20211113130825(2).jpg" alt="kaku">
+								</div>
+								<div class="newsletter-header text-center">
+									<h5 class="section-title mt-0">Adharika Agrawal</h5>
+									<div class="newmargin">
+										<p>Adharika graduated from the top Medical College; she realized the difficulties the students were facing. She has also achieved a gold medal in her academics. Her students have achieved more than 90% in their academics.</p>
+								
+									</div>
+									</div>
+
+							</div>
+
+						</div>
+						<div class="container-sm col-sm-6">
+							<div class="newsletter-inner section-inner">
+								<div class="newsletter-header text-center">
+									<h2 class="section-title mt-0">Book a free demo!</h2>
+
+								</div>
+								<div class="footer-form newsletter-form field field-grouped">
+									<form
+										action='https://forms.zohopublic.in/classesadr/form/ContactUs/formperma/6P4EYmKZdJJRMi02T0FeKe7VIWOs8AXgteSyM8RV3NM/htmlRecords/submit'
+										name='form' id='form' method='POST' accept-charset='UTF-8'
+										enctype='multipart/form-data'>
+										<input type="hidden" name="zf_referrer_name" value="">
+										<!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+										<input type="hidden" name="zf_redirect_url" value="">
+										<!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+										<input type="hidden" name="zc_gad" value="">
+										<!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+
+
+										<input type="text" name="SingleLine" value="" fieldType=1 maxlength="255"
+											placeholder="Name" class="control" required />
+										<!--Email-->
+
+										<input type="text" maxlength="255" name="Email" value="" fieldType=9
+											placeholder="Email" class="control" required />
+										<!--Phone-->
+
+										<input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode"
+											phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value=""
+											fieldType=11 id="international_PhoneNumber_countrycode"
+											placeholder="Contact No." class="control" required />
+										<textarea name="MultiLine" maxlength="65535" placeholder="Message"
+											class="control"></textarea>
+										<div class="control">
+											<button class="button button-primary button-block button-shadow"
+												type="submit">Enroll
+												Now</button>
+										</div>
+									</form>
+
+									<!--
+							<div class="control control-expanded">
+								<input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+							</div>
+							<div class="control">
+								<a class="button button-primary button-block button-shadow" href="#">Early access</a>
+							</div>
+						-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="site-footer-inner has-top-divider">
+					<div class="brand footer-brand" >
+						<div><a href="https://www.freeprivacypolicy.com/live/aa369eb3-3c33-45fe-8f88-4a8d71428b71">Privacy Policy</a></div>
+					</div>
+
+
+					<div class="footer-copyrig2018ht">&copy; 2022 TutMed, all rights reserved</div>
+					
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
